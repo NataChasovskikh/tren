@@ -47,7 +47,7 @@ section {
   border-radius: 8px 8px 0 0;
   -webkit-transition: -webkit-transform 0.3s;
   
-  &.one {
+  /* &.one {
     background: $color1;
     -webkit-transition-delay: 0s;
   }
@@ -60,7 +60,7 @@ section {
   &.three {
     background: $color3;
     -webkit-transition-delay: 0.1s;
-  }
+  } */
   
   &.four {
     background: $color4;
