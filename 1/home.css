@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
 html {
@@ -13,8 +13,8 @@ html {
 }
 
 body {
- background: #8e4423; 
- background-image: url(img/Layer\ 3\ copy.png);
+  background: #8e4423;
+  background-image: url(img/Layer\ 3\ copy.png);
 }
 
 .wrapper {
@@ -35,7 +35,7 @@ body {
   width: 54px;
   cursor: pointer;
   background: url(https://iamturner.co.uk/codepen/menu-icon.png) no-repeat center;
-  background-size: 44px;  
+  background-size: 44px;
 }
 
 section {
@@ -46,32 +46,33 @@ section {
   height: 100%;
   border-radius: 8px 8px 0 0;
   -webkit-transition: -webkit-transform 0.3s;
-  
-  /* &.one {
-    background: $color1;
-    -webkit-transition-delay: 0s;
-  }
-  
-  &.two {
-    background: $color2;
-    -webkit-transition-delay: 0.05s;
-  }
-  
-  &.three {
-    background: $color3;
-    -webkit-transition-delay: 0.1s;
-  } */
-  
-  &.four {
-    background: $color4;
-    -webkit-transition-delay: 0.15s;
-  }
-  
-  &.after {
-    -webkit-transform: translateY(100%);
-  }
-  
 }
+
+section.one {
+  background: red;
+  transition-delay: 0s;
+}
+
+section.two {
+  background: green;
+  transition-delay: 0.05s;
+}
+
+section.three {
+  background: gold;
+  transition-delay: 0.1s;
+}
+
+section.four {
+  background: pink;
+  transition-delay: 0.15s;
+}
+
+section.after {
+  transform: translateY(100%);
+}
+
+
 
 h1 {
   color: white;
@@ -80,10 +81,10 @@ h1 {
   text-align: center;
   margin: 0;
   line-height: 70px;
-  -webkit-user-select: none;
+  user-select: none;
 }
 
-.page-one {
+/* .page-one {
   section {
     &.one { -webkit-transition-delay: 0s; }
     &.two { -webkit-transition-delay: 0.15s; }
@@ -166,4 +167,75 @@ h1 {
     } 
   }
   
+} */
+
+.page-one.one {
+  transition-delay: 0s;
+}
+
+.page-one.two {
+  -webkit-transition-delay: 0.15s;
+}
+
+.page-one.three {
+  -webkit-transition-delay: 0.1s;
+}
+
+.page-one.four {
+  -webkit-transition-delay: 0.05s;
+}
+
+
+.page-two.one {
+  -webkit-transition-delay: 0s;
+}
+
+.page-two.two {
+  -webkit-transition-delay: 0.05s;
+}
+
+.page-two.three {
+  -webkit-transition-delay: 0.1s;
+}
+
+.page-two.four {
+  -webkit-transition-delay: 0.05s;
+}
+
+.menu-open {
+  cursor: pointer
+}
+
+.menu-open.one {
+  transform: translateY(70px) transition-delay: 0.15s
+}
+
+.menu-open.one:active {
+  background: lighten(red, 3%)
+}
+
+.menu-open.two {
+  transform: translateY(140px) transition-delay: 0.1s
+}
+
+.menu-open.two:active {
+  background: lighten(green, 3%)
+}
+
+
+
+.menu-open.three {
+  transform: translateY(210px) transition-delay: 0.05s
+}
+
+.menu-open.three:active {
+  background: lighten(gold, 3%)
+}
+
+.menu-open.four {
+  -webkit-transform: translateY(280px) -webkit-transition-delay: 0s
+}
+
+.menu-open.four:active {
+  background: lighten(pink, 3%)
 }
